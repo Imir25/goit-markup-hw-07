@@ -21,12 +21,25 @@
 
     <!--Header section-->
 
-    <!-- <header class="header-section">
+    <header class="header-section">
       <div class="container header-contact-container">
         <nav class="main-nav">
           <a class="logo-link link" href="./index.html"
             >Web<span class="accent-header">Studio</span></a
           >
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="32"
+            height="22"
+          >
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link active" href="./index.html">Studio</a>
@@ -54,23 +67,23 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!--Hero section-->
 
-      <!-- <section class="hero-section section">
-        <div class="container">
+      <section class="hero-section section">
+        <div class="hero-container container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="menu-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--About section-->
 
-      <!-- <section class="about-section section">
+      <section class="about-section section">
         <div class="container">
           <h2 class="visually-hidden">Or advantages</h2>
           <ul class="about-list list">
@@ -127,7 +140,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Portfolio section-->
 
@@ -174,7 +187,7 @@
         <div class="team-container container">
           <h2 class="our-team title">Our Team</h2>
           <ul class="team-list list">
-            <li class="team-item">
+            <li class="team-item team-card-item">
               <img
                 class="team-picture"
                 src="./images/team/mark-guerrero.jpg"
@@ -355,7 +368,7 @@
 
       <!-- Customers section -->
 
-      <!-- <section class="customers-section section">
+      <section class="customers-section section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -403,7 +416,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--Footer section-->
@@ -484,9 +497,72 @@
           </svg>
         </button> -->
 
-        <!-- Modal form -->
+        <!-- Mobile menu -->
 
-        <!-- <p class="form-text"
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+    
+          <ul class="mobile-menu list">
+            <li><a href="" class="link"><span class="menu-studio">Studio</span></a></li>
+            <li><a href="" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+          </ul>
+
+          <ul class="mobile-contacts list">
+            <li><a href="tel:11(000)1111111" class="link"><span class="menu-tel">+11 (000) 111-11-11</span></a></li>
+            <li><a href="mailto:info@devstudio.com" class="link"><span class="menu-mailto">info@devstudio.com</span></a></li>
+          </ul>
+
+          <ul class="mobile-social social list">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+    <!-- Modal form -->
+
+    <!-- <p class="form-text"
           >Leave your contacts and we will call you back</p
         >
         <form class="modal-form">
@@ -564,5 +640,14 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+
+<!-- Mobile menu js -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
