@@ -22,7 +22,7 @@ body {
 .container {
   /* Basic styles */
   min-width: 320px;
-  max-width: 426px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -416,7 +416,7 @@ img {
 }
 
 .main-title {
-  width: 320px;
+  max-width: 320px;
   height: 80px;
   font-weight: 700;
   font-size: 36px;
@@ -432,7 +432,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .main-title {
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 36px;
     height: 120px;
     font-weight: 700;
@@ -528,7 +528,6 @@ img {
   text-align: center;
 
   color: #2e2f42;
-
 }
 
 @media only screen and (min-width:768px) {
@@ -1135,8 +1134,23 @@ img {
  margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer-subscride {
+    width: 100%;
+  }
+  
+  .subscride-form {
+    width: 100%;
+  }
+
+  .subscride-form .subscride-form-button {
+    margin-left: 0;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
   .footer-subscride {
+    width: auto;
     margin: 0 0 16px 80px;
   }
 }
@@ -1187,7 +1201,8 @@ img {
 }
 
 .subscride-form-text {
-  width: 398px;
+  max-width: 398px;
+  width: 100%;
   height: 40px;
   padding-left: 16px;
   font-weight: 400;
@@ -1203,11 +1218,12 @@ img {
   display: flex;
   align-items: center;
   background-color: transparent;
+
 }
 
 @media only screen and (min-width: 768px) {
   .subscride-form-text {
-    width: 264px;
+   width: 264px;
   }
 }
 
@@ -1290,9 +1306,10 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  min-width: 392px;
+  width: 95%;
+
+  max-width: 392px;
   min-height: 584px;
-  min-height: 576px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1302,13 +1319,17 @@ img {
 
 @media only screen and (min-width: 768px) {
   .modal {
-    
+  width: 408px;
+  min-height: 584px;
+  min-height: 576px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .modal {
-    
+  width: 408px;
+  min-height: 584px;
+  min-height: 576px;
   }
 }
 
@@ -1417,7 +1438,8 @@ img {
 .modal-form-message {
   resize: none;
   padding: 8px 16px;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   height: 120px;
   margin-top: 4px;
   border-radius: 4px;
